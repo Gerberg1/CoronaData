@@ -14,6 +14,10 @@ public class FileHandler {
         covidList = new ArrayList<>();
     }
 
+    public ArrayList<Covid19Data> getCovidList(){
+        return covidList;
+    }
+
     public void tilføjData(int regionskode, String region, String aldersgruppe, int tilfældeIAlt, int døde, int indlagte){
         covidList.add(new Covid19Data(regionskode, region, aldersgruppe, tilfældeIAlt, døde, indlagte));
     }
